@@ -1,0 +1,34 @@
+
+I have two main chock points in my program:
+
+   1 - Least expensive of the two in resources, is the setup of the plugboard.
+		(attribution of the pairs letters using a Dictionary ADT.
+		
+	a) with an initital position of all the rotors to 1.
+
+		Creation & setups of pairs for plugboard: 1.762289 ms
+		Creation & setups of pairs for RotorI: 0.024596 ms
+		Creation & setups of pairs for RotorII: 0.025238 ms
+		Creation & setups of pairs for RotorIII: 0.025749 ms
+		Creation & setups of pairs for Reflector: 0.044988 ms
+
+        b) with an initial position of all the rotors to 26.
+
+		Creation & setups of pairs for plugboard: 1.577040 ms
+		Creation & setups of pairs for RotorI: 0.027401 ms
+		Creation & setups of pairs for RotorII: 0.038533 ms
+		Creation & setups of pairs for RotorIII: 0.031500 ms
+		Creation & setups of pairs for Reflector: 0.057426 ms
+
+	c) with an initial position of all the rotors to 13.
+		
+		Creation & setups of pairs for plugboard: 1.837872 ms
+		Creation & setups of pairs for RotorI: 0.026953 ms
+		Creation & setups of pairs for RotorII: 0.029399 ms
+		Creation & setups of pairs for RotorIII: 0.029709 ms
+		Creation & setups of pairs for Reflector: 0.097405 ms
+
+	Here we can see that the Rotors no mater there positions are pretty constant,
+	which is normal as this time comes before any change in the position.
+
+	However, we can see that the plugboard takes noticeably more time to setup that the rotors takes.
